@@ -9,7 +9,8 @@ When playing on Steam Deck or Linux via Proton, Steam treats the Complete Editio
 Furthermore, if you download your old saves directly from the Steam Cloud website, they download as a messy list of flat files with names like `%WinMyDocuments%Horizon Zero Dawn_Saved Game_autosave0_checkpoint.dat`. The Remastered game *requires* these files to be perfectly organized into specific subfolders (`autosave0/`, `quicksave5/`, etc.) for its Import tool to recognize them.
 
 ## What This Script Does
-*   **Locates the correct hidden folders:** Automatically finds the Proton prefix for the Remastered game (`2561580`).
+*   **Locates the correct hidden folders:** Automatically finds the Proton prefix for the Remastered game (`2561580`). 
+    *   *Note on Proton Prefixes:* The folder ID `2561580` is the official Steam AppID for Horizon Zero Dawn Remastered and is the exact same for every user who purchased the game directly through Steam. If you are using a non-Steam version of the game (e.g., Epic, GOG) added to Steam via "Add a Non-Steam Game", Steam will generate a long, random 10-digit number instead of `2561580`. In that case, you will need to manually adjust the `REMASTERED_APPID` in the script.
 *   **Automatic Backups:** Backs up any existing Remastered saves into a timestamped folder before making changes.
 *   **Direct Migration (Option 1):** If you still have the Complete Edition (`1151640`) installed, it copies the saves directly over.
 *   **Cloud Save Rebuilding (Option 2):** If you uninstalled the old game and downloaded your saves from the Steam Cloud website, you simply point the script to your Downloads folder. It will parse the messy filenames, intelligently rebuild the required classic directory structure, and place them exactly where the Remastered game expects them.
