@@ -23,7 +23,7 @@ Furthermore, if you download your old saves directly from the Steam Cloud websit
     1. Switch your Steam Deck to **Desktop Mode**.
     2. Open a browser and go to [Steam Cloud](https://store.steampowered.com/account/remotestorage).
     3. Find *Horizon Zero Dawn: Complete Edition* and click **Show Files**.
-    4. Download the files for the save slots you want to keep. For each save (e.g., `autosave0`), download the `checkpoint.dat`, `icon.png`, and `slotinfo.ini`.
+    4. Download the files for the save slots you want to keep. For each save (e.g., `autosave0`), download the `checkpoint.dat`, `icon.png`, and `slotinfo.ini`. *(Note: The script only strictly requires the `checkpoint.dat` file. If the `icon.png` files are corrupted or missing, that is perfectly fine.)*
     5. Save them to a single folder (like your `~/Downloads` folder).
 
 ### Step 2: Run the Script
